@@ -29,11 +29,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                         &trans                   &trans          &trans          &trans           &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &kp BACKSPACE                                  &mkp MB5                 &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN  &trans
-&trans  &trans  &trans  &trans  &trans  &kp DELETE     &trans  &trans                  &mkp MB4                 &mkp MB1        &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
-&trans  &trans  &trans  &trans  &trans  &kp ENTER      &trans  &trans                  &trans                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT_ARROW))  &trans          &trans          &trans           &trans         &trans
+&trans  &trans          &trans  &trans  &trans  &trans                                         &trans                   &trans          &trans          &trans           &trans         &trans
+&trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &kp BACKSPACE                                  &mkp MB5                 &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN  &trans
+&trans  &bt BT_NXT      &trans  &trans  &trans  &kp DELETE     &trans  &trans                  &mkp MB4                 &mkp MB1        &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
+&trans  &bt BT_PRV      &trans  &trans  &trans  &kp ENTER      &trans  &trans                  &trans                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
+&trans  &trans          &trans  &trans  &trans  &trans         &trans  &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT_ARROW))  &trans          &trans          &trans           &trans         &trans
             >;
         };
 
