@@ -40,7 +40,7 @@
         layer_2 {
             bindings = <
 &trans  &trans           &trans             &trans    &trans      &trans                                         &trans                 &trans       &trans         &trans            &trans     &trans
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp LBKT                                       &kp RBKT               &kp PERCENT  &kp AMPERSAND  &kp SINGLE_QUOTE  &kp EQUAL  &trans
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp LEFT_BRACKET                               &kp RIGHT_BRACKET      &kp PERCENT  &kp AMPERSAND  &kp SINGLE_QUOTE  &kp EQUAL  &trans
 &trans  &kp QUESTION     &trans             &trans    &trans      &kp LEFT_PARENTHESIS  &trans           &trans  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp PIPE       &kp SEMICOLON     &kp COLON  &trans
 &trans  &trans           &trans             &trans    &trans      &kp LEFT_BRACE        &trans           &trans  &kp RIGHT_BRACE        &kp UNDER    &kp AT_SIGN    &kp BACKSLASH     &kp SLASH  &trans
 &trans  &trans           &trans             &trans    &trans      &trans                &msc MOVE_Y(10)  &trans  &trans                 &trans       &trans         &trans            &trans     &trans
