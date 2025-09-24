@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -39,16 +40,32 @@
         };
     };
 
+    behaviors {
+        tap_dance_0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            bindings = <&mt RIGHT_SHIFT BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        tap_dance_1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&kp SPACE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&none  &none           &none     &none     &none                 &none                                                &none        &none  &none      &none          &none      &none
-&none  &kp Q           &kp W     &kp E     &kp R                 &kp T                                                &kp Y        &kp U  &kp I      &kp O          &kp P      &none
-&none  &kp A           &kp S     &kp D     &kp F                 &kp G        &none             &none                 &kp H        &kp J  &kp K      &kp L          &kp SEMI   &none
-&none  &kp Z           &kp X     &kp C     &kp V                 &kp B        &kp ESC           &kp TAB               &kp N        &kp M  &kp COMMA  &kp DOT        &kp MINUS  &none
-&none  &kp LEFT_SHIFT  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1  &mt RSHIFT BACKSPACE  &lt 2 ENTER  &none  &none      &kp RIGHT_ALT  &kp RCTRL  &none
+&none  &none           &none     &none     &none                 &none                                         &none        &none  &none      &none          &none      &none
+&none  &kp Q           &kp W     &kp E     &kp R                 &kp T                                         &kp Y        &kp U  &kp I      &kp O          &kp P      &none
+&none  &kp A           &kp S     &kp D     &kp F                 &kp G         &none             &none         &kp H        &kp J  &kp K      &kp L          &kp SEMI   &none
+&none  &kp Z           &kp X     &kp C     &kp V                 &kp B         &kp ESC           &kp TAB       &kp N        &kp M  &kp COMMA  &kp DOT        &kp MINUS  &none
+&none  &kp LEFT_SHIFT  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &tap_dance_1  &lt 3 LANGUAGE_1  &tap_dance_0  &lt 2 ENTER  &none  &none      &kp RIGHT_ALT  &kp RCTRL  &none
             >;
         };
 
@@ -64,11 +81,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans           &trans         &trans    &trans      &trans                            &trans          &trans             &trans            &trans            &trans        &trans
-&trans  &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp JP_LBRACKET                   &kp JP_RBRACKET &kp PERCENT        &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_EQUAL  &trans
-&trans  &kp QUESTION     &trans         &trans    &trans      &kp JP_LPAREN     &trans  &trans  &kp JP_RPAREN   &kp MINUS          &kp JP_PIPE       &kp SEMICOLON     &kp JP_COLON  &trans
-&trans  &kp JP_YEN       &trans         &trans    &trans      &kp JP_LBRACE     &trans  &trans  &kp JP_RBRACE   &kp JP_UNDERSCORE  &kp JP_AT         &kp JP_BACKQUOTE  &kp SLASH     &trans
-&trans  &trans           &trans         &trans    &trans      &trans            &trans  &trans  &trans          &trans             &trans            &trans            &trans        &trans
+&trans  &trans           &trans         &trans    &trans      &trans                           &trans           &trans             &trans            &trans            &trans        &trans
+&trans  &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp JP_LBRACKET                  &kp JP_RBRACKET  &kp PERCENT        &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_EQUAL  &trans
+&trans  &kp QUESTION     &trans         &trans    &trans      &kp JP_LPAREN    &trans  &trans  &kp JP_RPAREN    &kp MINUS          &kp JP_PIPE       &kp SEMICOLON     &kp JP_COLON  &trans
+&trans  &kp JP_YEN       &trans         &trans    &trans      &kp JP_LBRACE    &trans  &trans  &kp JP_RBRACE    &kp JP_UNDERSCORE  &kp JP_AT         &kp JP_BACKQUOTE  &kp SLASH     &trans
+&trans  &trans           &trans         &trans    &trans      &trans           &trans  &trans  &trans           &trans             &trans            &trans            &trans        &trans
             >;
         };
 
