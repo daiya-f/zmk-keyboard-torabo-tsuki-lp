@@ -60,10 +60,6 @@
         };
     };
 
-    &lt {
-        tapping-term-mjs = <160>; // This is the value already set by default
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
