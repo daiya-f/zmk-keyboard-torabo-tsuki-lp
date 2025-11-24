@@ -58,6 +58,10 @@
 
             tapping-term-ms = <160>;
         };
+
+        &lt {
+            tapping-term-mjs = <160>; // This is the value already set by default
+        };
     };
 
     keymap {
