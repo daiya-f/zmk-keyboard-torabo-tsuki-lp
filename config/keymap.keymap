@@ -54,7 +54,7 @@
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <170>;
         };
     };
 
