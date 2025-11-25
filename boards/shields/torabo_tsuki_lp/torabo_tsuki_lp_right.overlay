@@ -12,10 +12,6 @@
     };
 };
 
-&lt {
-    tapping-term-ms = <150>;
-};
-
 &size_s_transform {
     col-offset = <7>;
 };
