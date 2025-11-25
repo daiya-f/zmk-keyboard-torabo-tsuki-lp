@@ -29,6 +29,8 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+&lt { tapping-term-ms = <150>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -46,8 +48,6 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             bindings = <&mt RIGHT_SHIFT BACKSPACE>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <160>;
         };
 
         tap_dance_1: tap_dance_1 {
@@ -55,8 +55,6 @@
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
-
-            tapping-term-ms = <160>;
         };
 
         lt1_hold_or_tap: lt1_hold_or_tap {
