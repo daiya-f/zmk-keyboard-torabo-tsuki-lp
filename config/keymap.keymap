@@ -68,8 +68,8 @@
 &none           &none  &none     &none     &none                 &none                                         &none        &none  &none      &none          &none      &none
 &kp ESCAPE      &kp Q  &kp W     &kp E     &kp R                 &kp T                                         &kp Y        &kp U  &kp I      &kp O          &kp P      &kp DEL
 &kp TAB         &kp A  &kp S     &kp D     &kp F                 &kp G         &none             &none         &kp H        &kp J  &kp K      &kp L          &kp SEMI   &kp COLON
-&kp LEFT_SHIFT  &kp Z  &kp X     &kp C     &kp V                 &kp B         &kp ESC           &kp TAB       &kp N        &kp M  &kp COMMA  &kp DOT        &kp MINUS  &kp RCTRL
-&none           &none  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &tap_dance_1  &lt 3 LANGUAGE_1  &tap_dance_0  &lt 2 ENTER  &none  &none      &kp RIGHT_ALT  &none      &none
+&kp LEFT_SHIFT  &kp Z  &kp X     &kp C     &kp V                 &kp B         &kp LS(RG(S))     &kp TAB       &kp N        &kp M  &kp COMMA  &kp DOT        &kp MINUS  &kp RCTRL
+&kp LEFT_SHIFT  &none  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &tap_dance_1  &lt 3 LANGUAGE_1  &tap_dance_0  &lt 2 ENTER  &none  &none      &kp RIGHT_ALT  &none      &kp RCTRL
             >;
         };
 
