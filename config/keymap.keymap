@@ -51,6 +51,8 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             bindings = <&mt RIGHT_SHIFT BACKSPACE>, <&kp BACKSPACE>;
+
+            tapping-term-ms = <140>;
         };
 
         tap_dance_1: tap_dance_1 {
@@ -58,6 +60,8 @@
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&kp SPACE>;
+
+            tapping-term-ms = <140>;
         };
 
         lt1_hold_or_tap: lt1_hold_or_tap {
