@@ -99,11 +99,11 @@
 
         layer_1 {
             bindings = <
-&trans          &trans        &trans        &trans        &trans        &trans                                      &trans                   &trans          &trans          &trans           &trans         &trans
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                       &mkp MB5                 &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN  &trans
-&trans          &trans        &trans        &trans        &trans        &kp DELETE  &trans  &trans                  &mkp MB4                 &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
-&trans          &trans        &trans        &trans        &trans        &kp ENTER   &trans  &trans                  &trans                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans      &trans  &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT_ARROW))  &trans          &trans          &trans           &trans         &trans
+&trans        &trans        &trans        &trans        &trans        &trans                                              &trans                   &trans          &trans          &trans           &trans         &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                               &mkp MB5                 &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN  &trans
+&trans        &trans        &trans        &trans        &trans        &kp DELETE  &trans          &trans                  &mkp MB4                 &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
+&trans        &trans        &trans        &trans        &trans        &kp ENTER   &bt BT_CLR_ALL  &trans                  &trans                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans          &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT_ARROW))  &trans          &trans          &trans           &trans         &trans
             >;
         };
 
