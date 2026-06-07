@@ -8,6 +8,7 @@
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
 
     pointing_device: pointing_device@0 {
+    res-cpi = <1000>;
         status = "okay";
         compatible = "pixart,paw3222";
         reg = <0>;
