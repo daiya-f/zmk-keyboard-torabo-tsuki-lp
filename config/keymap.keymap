@@ -30,8 +30,8 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <190>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
 };
 
 &mt { tapping-term-ms = <200>; };
@@ -91,42 +91,42 @@
 
         layer_0 {
             bindings = <
-&none           &none           &none     &none     &none                 &none                                              &none        &none  &none      &none            &none      &none
-&kp ESCAPE      &kp Q           &kp W     &kp E     &kp R                 &kp T                                              &kp Y        &kp U  &lt 1 I    &lt 3 O          &kp P      &kp MINUS
-&kp TAB         &kp A           &kp S     &kp D     &kp F                 &kp G        &none             &none               &kp H        &kp J  &kp K      &kp L            &kp SEMI   &kp JP_COLON
-&kp LEFT_SHIFT  &kp Z           &kp X     &kp C     &kp V                 &kp B        &kp LS(RG(S))     &mt LEFT_SHIFT TAB  &kp N        &kp M  &kp COMMA  &kp DOT          &kp MINUS  &kp RCTRL
-&kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1  &kp BACKSPACE       &lt 2 ENTER  &none  &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RCTRL
-            >;
+    &none &none &none &none &none &none &none &none &none &none &none &none
+    &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &lt 1 I &lt 3 O &kp P &kp MINUS
+    &kp TAB &kp A &kp S &kp D &kp F &kp G &none &none &kp H &kp J &kp K &kp L &kp SEMI &kp JP_COLON
+    &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp LS(RG(S)) &mt LEFT_SHIFT TAB &kp N &kp M &kp COMMA &kp DOT &kp MINUS &kp RCTRL
+    &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LGUI &kp LALT &mt LCTRL LANGUAGE_2 &lt 1 SPACE &lt 3 LANGUAGE_1 &kp BACKSPACE &lt 2 ENTER &none &none &kp RIGHT_SHIFT &kp RCTRL &kp RCTRL
+    >;
         };
 
         layer_1 {
             bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans                              &trans    &trans          &trans          &trans           &trans         &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                               &mkp MB5  &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN  &trans
-&trans        &trans        &trans        &trans        &trans        &kp DELETE  &trans  &trans          &mkp MB4  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
-&trans        &trans        &trans        &trans        &trans        &kp ESC     &trans  &bt BT_CLR_ALL  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &none           &none     &trans          &trans          &trans           &trans         &trans
-            >;
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &mkp MB5 &kp HOME &kp END &kp PAGE_UP &kp PAGE_DOWN &trans
+    &trans &trans &trans &trans &trans &kp DELETE &trans &trans &mkp MB4 &mkp LCLK &kp UP_ARROW &mkp RCLK &mkp MCLK &trans
+    &trans &trans &trans &trans &trans &kp ESC &trans &bt BT_CLR_ALL &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans
+    &trans &trans &trans &trans &trans &trans &trans &none &none &trans &trans &trans &trans &trans
+    >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans           &trans                &trans    &trans      &trans                           &trans           &trans             &trans            &trans            &trans        &trans
-&trans  &kp EXCLAMATION  &kp JP_DQUOTE         &kp HASH  &kp DOLLAR  &kp JP_LBRACKET                  &kp JP_RBRACKET  &kp PERCENT        &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_EQUAL  &kp LC(MINUS)
-&trans  &kp QUESTION     &kp NON_US_BACKSLASH  &trans    &trans      &kp JP_LPAREN    &trans  &trans  &kp JP_RPAREN    &kp MINUS          &kp JP_PIPE       &kp SEMICOLON     &kp JP_COLON  &kp LC(RS(PLUS))
-&trans  &kp JP_YEN       &trans                &trans    &trans      &kp JP_LBRACE    &trans  &trans  &kp JP_RBRACE    &kp JP_UNDERSCORE  &kp JP_AT         &kp JP_BACKQUOTE  &kp SLASH     &trans
-&trans  &trans           &trans                &trans    &trans      &trans           &trans  &trans  &trans           &trans             &trans            &trans            &trans        &trans
-            >;
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+    &trans &kp EXCLAMATION &kp JP_DQUOTE &kp HASH &kp DOLLAR &kp JP_LBRACKET &kp JP_RBRACKET &kp PERCENT &kp JP_AMPERSAND &kp JP_QUOTE &kp JP_EQUAL &kp LC(MINUS)
+    &trans &kp QUESTION &kp NON_US_BACKSLASH &trans &trans &kp JP_LPAREN &trans &trans &kp JP_RPAREN &kp MINUS &kp JP_PIPE &kp SEMICOLON &kp JP_COLON &kp LC(RS(PLUS))
+    &trans &kp JP_YEN &trans &trans &trans &kp JP_LBRACE &trans &trans &kp JP_RBRACE &kp JP_UNDERSCORE &kp JP_AT &kp JP_BACKQUOTE &kp SLASH &trans
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+    >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                                  &trans                   &trans  &trans  &trans  &trans           &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                                  &kp COMMA                &kp N7  &kp N8  &kp N9  &kp JP_EQUAL     &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &trans                  &kp PERIOD               &kp N4  &kp N5  &kp N6  &kp JP_ASTERISK  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans                  &kp N0                   &kp N1  &kp N2  &kp N3  &kp JP_PLUS      &trans
-&trans  &trans  &trans   &trans   &trans   &trans  &trans  &kp RG(RC(LEFT_ARROW))  &kp RC(RG(RIGHT_ARROW))  &trans  &trans  &trans  &trans           &trans
-            >;
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+    &trans &kp F9 &kp F10 &kp F11 &kp F12 &trans &kp COMMA &kp N7 &kp N8 &kp N9 &kp JP_EQUAL &trans
+    &trans &kp F5 &kp F6 &kp F7 &kp F8 &trans &trans &trans &kp PERIOD &kp N4 &kp N5 &kp N6 &kp JP_ASTERISK &trans
+    &trans &kp F1 &kp F2 &kp F3 &kp F4 &trans &trans &trans &kp N0 &kp N1 &kp N2 &kp N3 &kp JP_PLUS &trans
+    &trans &trans &trans &trans &trans &trans &trans &kp RG(RC(LEFT_ARROW)) &kp RC(RG(RIGHT_ARROW)) &trans &trans &trans &trans &trans
+    >;
         };
     };
 };
