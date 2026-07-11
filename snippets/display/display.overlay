@@ -1,0 +1,35 @@
+/* SPIM1 pins: SCK=P0.17, MOSI=P0.21 */
+&pinctrl {
+    spi1_default: spi1_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 21)>;
+        };
+    };
+    spi1_sleep: spi1_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 21)>;
+            low-power-enable;
+        };
+    };
+};
+
+/* Display on SPIM1. CS is active-high per Sharp memory LCD spec */
+&spi1 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+};
+
+/* FFC POW (P0.24) held high = display VCC supply */
+&gpio0 {
+    display_pwr_hog {
+        gpio-hog;
+        gpios = <24 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
+};

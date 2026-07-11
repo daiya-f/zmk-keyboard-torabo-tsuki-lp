@@ -1,5 +1,6 @@
 build:
   cmake: .
+  kconfig: zephyr/Kconfig.workspace_stub
   settings:
     board_root: .
     snippet_root: .
