@@ -1,0 +1,26 @@
+/*
+ * Same 71-key physical layout as kscan-4-direction-switch(-ext),
+ * for the half WITHOUT the 4-direction switch hardware.
+ * Both halves must share this layout so key positions match.
+ */
+#include "../kscan-4-direction-switch/kscan-4-direction-switch-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout_l_4_direction;
+        zmk,kscan = &kscan2;
+    };
+
+    kscan2: kscan2 {
+        compatible = "zmk,kscan-composite";
+        rows = <6>;
+        columns = <7>;
+
+        matrix {
+            kscan = <&kscan0>;
+#if defined(TORABO_TSUKI_LP_RIGHT)
+            col-offset = <7>;
+#endif
+        };
+    };
+};

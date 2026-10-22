@@ -1,27 +1,27 @@
 include:
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener"
+    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener layout-4-direction"
     artifact-name: torabo_tsuki_lp_left_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_right
-    snippet: studio-rpc-usb-uart
+    snippet: "studio-rpc-usb-uart layout-4-direction"
     artifact-name: torabo_tsuki_lp_right_peripheral
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart input-trackpad-mini"
+    snippet: "studio-rpc-usb-uart input-trackpad-mini layout-4-direction"
     artifact-name: torabo_tsuki_lp_left_peripheral
   - board: bmp_boost
     shield: torabo_tsuki_lp_right nice_view_gem
-    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-split-listener display"
+    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-split-listener display layout-4-direction"
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart input-trackpad-mini input-split"
+    snippet: "studio-rpc-usb-uart input-trackpad-mini input-split kscan-4-direction-switch-ext"
     artifact-name: torabo_tsuki_lp_double_ball_left_peripheral
   - board: bmp_boost
     shield: torabo_tsuki_lp_right nice_view_gem
-    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-split-listener display"
+    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-split-listener display layout-4-direction"
     artifact-name: torabo_tsuki_lp_double_ball_right_central
   - board: bmp_boost
     shield: settings_reset
