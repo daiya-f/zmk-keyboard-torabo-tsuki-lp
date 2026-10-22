@@ -2,7 +2,7 @@
  * 4-direction switch module on the BMP Boost Extender (Mini) FFC.
  * The main KDK-Link port stays free for the trackpad / trackball.
  *
- * Extender FFC : 2=P0.17  3=P0.21  4=P0.29  5=P0.31  6=P0.24(POW)
+ * Extender FFC : 2=P0.17  3=P0.21  4=P0.29  5=P0.31  (module: 1=NC 6=GND, no VCC needed)
  * (same pin order as the main KDK-Link: 2=P0.18 3=P0.16 4=P0.19 5=P0.20)
  */
 #include "../kscan-4-direction-switch/kscan-4-direction-switch-layouts.dtsi"
@@ -42,14 +42,5 @@
             kscan = <&kscan1>;
             row-offset = <5>;
         };
-    };
-};
-
-/* FFC pin 6 (POW) = module VCC per KDK-Link */
-&gpio0 {
-    kdk_ext_pwr_hog {
-        gpio-hog;
-        gpios = <24 GPIO_ACTIVE_HIGH>;
-        output-high;
     };
 };
