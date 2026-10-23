@@ -107,7 +107,7 @@
 &trans        &trans        &trans        &trans        &trans        &kp DELETE    &trans  &trans  &mkp MB4  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
 &trans        &trans        &trans        &trans        &trans        &kp ESC       &trans  &none   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
 &trans        &trans        &trans        &trans        &trans        &trans        &trans  &none   &none     &trans          &trans          &trans           &trans         &trans
-&kp LC(PG_UP)     &kp LC(PG_DN)      &mkp MB4                 &mkp MB5                  &kp LS(RG(S))
+&kp LS(UP_ARROW)  &kp LS(DOWN_ARROW) &kp LS(LEFT_ARROW)       &kp LS(RIGHT_ARROW)       &kp LC(C)
             >;
         };
 
@@ -118,7 +118,7 @@
 &trans  &kp QUESTION     &kp NON_US_BACKSLASH  &trans          &trans      &kp JP_LPAREN    &trans  &trans  &kp JP_RPAREN    &kp MINUS          &kp JP_PIPE       &kp SEMICOLON     &kp JP_COLON  &kp LC(RS(PLUS))
 &trans  &kp JP_YEN       &trans                &trans          &trans      &kp JP_LBRACE    &trans  &trans  &kp JP_RBRACE    &kp JP_UNDERSCORE  &kp JP_AT         &kp JP_BACKQUOTE  &kp SLASH     &trans
 &trans  &trans           &trans                &bt BT_CLR_ALL  &trans      &trans           &trans  &trans  &trans           &trans             &trans            &trans            &trans        &trans
-&trans            &trans             &trans                   &trans                    &trans
+&kp LC(PG_UP)     &kp LC(PG_DN)      &mkp MB4                 &mkp MB5                  &kp LS(RG(S))
             >;
         };
 
