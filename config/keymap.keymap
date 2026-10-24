@@ -96,7 +96,8 @@
 &kp TAB         &kp A           &kp S     &kp D     &kp F                 &kp G        &none             &none               &kp H        &kp J  &kp K      &kp L            &kp SEMI   &kp JP_COLON
 &kp LEFT_SHIFT  &kp Z           &kp X     &kp C     &kp V                 &kp B        &kp LS(RG(S))     &mt LEFT_SHIFT TAB  &kp N        &kp M  &kp COMMA  &kp DOT          &kp MINUS  &kp RCTRL
 &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1  &kp BACKSPACE       &lt 2 ENTER  &none  &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RCTRL
-&kp UP_ARROW      &kp DOWN_ARROW     &kp LEFT_ARROW           &kp RIGHT_ARROW           &kp ENTER
+/* 4-way switch is mounted rotated 180deg: hardware slots are UP DOWN LEFT RIGHT PUSH, so up/down and left/right bindings are swapped */
+&kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW          &kp LEFT_ARROW            &kp ENTER
             >;
         };
 
@@ -107,7 +108,7 @@
 &trans        &trans        &trans        &trans        &trans        &kp DELETE    &trans  &trans  &mkp MB4  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK      &trans
 &trans        &trans        &trans        &trans        &trans        &kp ESC       &trans  &none   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
 &trans        &trans        &trans        &trans        &trans        &trans        &trans  &none   &none     &trans          &trans          &trans           &trans         &trans
-&kp LS(UP_ARROW)  &kp LS(DOWN_ARROW) &kp LS(LEFT_ARROW)       &kp LS(RIGHT_ARROW)       &kp LC(C)
+&kp LS(DOWN_ARROW) &kp LS(UP_ARROW)   &kp LS(RIGHT_ARROW)      &kp LS(LEFT_ARROW)        &kp LC(C)
             >;
         };
 
@@ -118,7 +119,7 @@
 &trans  &kp QUESTION     &kp NON_US_BACKSLASH  &trans          &trans      &kp JP_LPAREN    &trans  &trans  &kp JP_RPAREN    &kp MINUS          &kp JP_PIPE       &kp SEMICOLON     &kp JP_COLON  &kp LC(RS(PLUS))
 &trans  &kp JP_YEN       &trans                &trans          &trans      &kp JP_LBRACE    &trans  &trans  &kp JP_RBRACE    &kp JP_UNDERSCORE  &kp JP_AT         &kp JP_BACKQUOTE  &kp SLASH     &trans
 &trans  &trans           &trans                &bt BT_CLR_ALL  &trans      &trans           &trans  &trans  &trans           &trans             &trans            &trans            &trans        &trans
-&kp LC(PG_UP)     &kp LC(PG_DN)      &mkp MB4                 &mkp MB5                  &kp LS(RG(S))
+&kp LC(PG_DN)     &kp LC(PG_UP)      &mkp MB5                 &mkp MB4                  &kp LS(RG(S))
             >;
         };
 
@@ -129,7 +130,7 @@
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &trans                  &kp PERIOD               &kp N4  &kp N5  &kp N6  &kp JP_ASTERISK  &trans
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans                  &kp N0                   &kp N1  &kp N2  &kp N3  &kp JP_PLUS      &trans
 &trans  &trans  &trans   &trans   &trans   &trans  &trans  &kp RG(RC(LEFT_ARROW))  &kp RC(RG(RIGHT_ARROW))  &trans  &trans  &trans  &trans           &trans
-&kp LG(TAB)       &kp LG(D)          &kp RG(RC(LEFT_ARROW))   &kp RC(RG(RIGHT_ARROW))   &trans
+&kp LG(D)         &kp LG(TAB)        &kp RC(RG(RIGHT_ARROW))  &kp RG(RC(LEFT_ARROW))    &trans
             >;
         };
     };
