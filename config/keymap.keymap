@@ -97,7 +97,7 @@
 &kp LEFT_SHIFT  &kp Z           &kp X     &kp C     &kp V                 &kp B        &kp LS(RG(S))     &mt LEFT_SHIFT TAB  &kp N        &kp M  &kp COMMA  &kp DOT          &kp MINUS  &kp RCTRL
 &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LGUI  &kp LALT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE  &lt 3 LANGUAGE_1  &kp BACKSPACE       &lt 2 ENTER  &none  &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RCTRL
 /* 4-way switch is mounted rotated 180deg: hardware slots are UP DOWN LEFT RIGHT PUSH, so up/down and left/right bindings are swapped */
-&kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW          &kp LEFT_ARROW            &kp ENTER
+&kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW          &kp LEFT_ARROW            &kp LS(RG(S))
             >;
         };
 
