@@ -1,0 +1,16 @@
+/*
+ * Moves upstream's kscan-4-direction-switch to the BMP Boost Extender (Mini) FFC,
+ * so the main KDK-Link port stays free for the trackpad.
+ * Must be listed after kscan-4-direction-switch in the snippet list.
+ *
+ * Extender FFC : 2=P0.17  3=P0.21  4=P0.29  5=P0.31
+ * KDK-Link     : 2=P0.18  3=P0.16  4=P0.19  5=P0.20
+ */
+&kscan1 {
+    up-gpios = <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    down-gpios = <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    left-gpios = <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+                 <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    right-gpios = <&gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    push-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+};

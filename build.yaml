@@ -25,7 +25,7 @@ include:
     artifact-name: torabo_tsuki_lp_double_ball_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart kscan-4-direction-switch"
+    snippet: "studio-rpc-usb-uart input-trackpad-mini input-split kscan-4-direction-switch kscan-4-direction-switch-ext"
     artifact-name: torabo_tsuki_lp_4dir_left_peripheral
   - board: bmp_boost
     shield: settings_reset
