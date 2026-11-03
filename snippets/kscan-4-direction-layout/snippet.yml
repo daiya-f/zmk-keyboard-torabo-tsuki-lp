@@ -1,3 +1,0 @@
-name: kscan-4-direction-layout
-append:
-  EXTRA_DTC_OVERLAY_FILE: kscan-4-direction-layout.overlay
