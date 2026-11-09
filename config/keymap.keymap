@@ -47,6 +47,26 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <25 26>;
+        };
+
+        combo_win {
+            bindings = <&kp LGUI>;
+            key-positions = <39 40>;
+        };
+
+        combo_alt {
+            bindings = <&kp LALT>;
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
